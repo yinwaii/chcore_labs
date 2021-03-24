@@ -13,6 +13,7 @@ all: build
 
 gdb:
 	gdb-multiarch -n -x .gdbinit
+	# gdb -n -x .gdbinit
 
 build: FORCE
 	./scripts/docker_build.sh
